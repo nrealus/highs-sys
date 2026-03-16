@@ -40,3 +40,16 @@ pub const MATRIX_FORMAT_ROW_WISE: HighsInt = 2;
 
 pub const OBJECTIVE_SENSE_MINIMIZE: HighsInt = 1;
 pub const OBJECTIVE_SENSE_MAXIMIZE: HighsInt = -1;
+
+pub const IIS_BOUND_STATUS_DROPPED: HighsInt = -1;
+pub const IIS_BOUND_STATUS_NULL: HighsInt = 0;
+pub const IIS_BOUND_STATUS_FREE: HighsInt = 1;
+pub const IIS_BOUND_STATUS_LOWER: HighsInt = 2;
+pub const IIS_BOUND_STATUS_UPPER: HighsInt = 3;
+pub const IIS_BOUND_STATUS_BOXED: HighsInt = 4;
+
+pub const IIS_STATUS_MIN: HighsInt = IIS_STATUS_NOT_IN_CONFLICT;
+pub const IIS_STATUS_NOT_IN_CONFLICT: HighsInt = -1;
+pub const IIS_STATUS_MAYBE_IN_CONFLICT: HighsInt = 0;
+pub const IIS_STATUS_IN_CONFLICT: HighsInt = 1;
+pub const IIS_STATUS_MAX: HighsInt = IIS_STATUS_IN_CONFLICT;
